@@ -1,13 +1,20 @@
 use dioxus::prelude::*;
 
+mod components;
+
+use components::layout::Layout;
+
 fn main() {
-    dioxus::launch(app)
+    dioxus::launch(App)
 }
 
-fn app() -> Element {
+#[component]
+fn App() -> Element {
     rsx! {
-        div {
-            "Hi"
+          document::Link {
+            rel: "stylesheet",
+            href: asset!("/assets/styles.scss")
         }
+        Layout {}
     }
 }

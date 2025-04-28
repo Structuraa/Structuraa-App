@@ -8,3 +8,22 @@ out_dir = "dist"
 
 asset_dir = "public"
 
+[web.app]
+
+title = "Structuraa"
+
+[web.watcher]
+
+reload_html = true
+
+watch_path = ["src", "assets"]
+
+[web.resource]
+
+style = []
+
+script = []
+
+[web.resource.dev]
+
+script = []
