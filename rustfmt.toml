@@ -1,1 +1,5 @@
+# Rustfmt configuration
+edition = "2024"
 max_width = 80
+reorder_imports = true
+reorder_modules = true

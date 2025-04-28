@@ -1,5 +1,9 @@
+pub mod actionbar;
 pub mod editor;
+pub mod footer;
 pub mod header;
+pub mod icons;
 pub mod layout;
 pub mod sidebar;
 pub mod toolbar;
+pub mod topbar;

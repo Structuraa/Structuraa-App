@@ -1,0 +1,421 @@
+/* Reset based on Tailwind's preflight */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Set core root defaults */
+html:focus-within {
+	scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+	min-height: 100vh;
+	text-rendering: optimizeSpeed;
+	line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+	text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+	html:focus-within {
+		scroll-behavior: auto;
+	}
+
+	*,
+	*::before,
+	*::after {
+		animation-duration: 0.01ms !important;
+		animation-iteration-count: 1 !important;
+		transition-duration: 0.01ms !important;
+		scroll-behavior: auto !important;
+	}
+}
+
+/* Remove default button styles */
+button {
+	background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	color: inherit;
+}
+
+/* Remove default input styles */
+input {
+	border: none;
+	outline: none;
+	background: none;
+}
+
+/* Remove default select styles */
+select {
+	border: none;
+	outline: none;
+	background: none;
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+/* Remove default textarea styles */
+textarea {
+	border: none;
+	outline: none;
+	resize: none;
+}
+
+/* Remove default table styles */
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+
+/* Remove default legend styles */
+legend {
+	padding: 0;
+}
+
+/* Remove default hr styles */
+hr {
+	border: none;
+	border-top: 1px solid currentColor;
+	margin: 0;
+}
+
+/* Remove default details styles */
+details {
+	display: block;
+}
+
+/* Remove default summary styles */
+summary {
+	display: list-item;
+}
+
+/* Remove default dialog styles */
+dialog {
+	padding: 0;
+	border: none;
+	background: none;
+}
+
+/* Remove default meter styles */
+meter {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default progress styles */
+progress {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default search styles */
+input[type='search'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default number input styles */
+input[type='number'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default color input styles */
+input[type='color'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default range input styles */
+input[type='range'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default file input styles */
+input[type='file'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default checkbox styles */
+input[type='checkbox'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default radio styles */
+input[type='radio'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default date input styles */
+input[type='date'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default time input styles */
+input[type='time'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default datetime input styles */
+input[type='datetime'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default datetime-local input styles */
+input[type='datetime-local'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default month input styles */
+input[type='month'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default week input styles */
+input[type='week'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default url input styles */
+input[type='url'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default tel input styles */
+input[type='tel'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default email input styles */
+input[type='email'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default password input styles */
+input[type='password'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default text input styles */
+input[type='text'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default submit input styles */
+input[type='submit'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default reset input styles */
+input[type='reset'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default button input styles */
+input[type='button'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default image input styles */
+input[type='image'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default hidden input styles */
+input[type='hidden'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default file input styles */
+input[type='file'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default submit button styles */
+button[type='submit'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default reset button styles */
+button[type='reset'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default button styles */
+button[type='button'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default submit input styles */
+input[type='submit'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default reset input styles */
+input[type='reset'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default button input styles */
+input[type='button'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default image input styles */
+input[type='image'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default hidden input styles */
+input[type='hidden'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default file input styles */
+input[type='file'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default submit button styles */
+button[type='submit'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default reset button styles */
+button[type='reset'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+
+/* Remove default button styles */
+button[type='button'] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}

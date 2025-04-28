@@ -11,10 +11,7 @@ fn main() {
 #[component]
 fn App() -> Element {
     rsx! {
-          document::Link {
-            rel: "stylesheet",
-            href: asset!("/assets/styles.scss")
-        }
+        document::Link { rel: "stylesheet", href: asset!("/assets/styles.scss") }
         Layout {}
     }
 }
